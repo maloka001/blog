@@ -1,0 +1,40 @@
+baseurl: ''
+languageCode: en-us
+title: Curiorat
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+disableHugoGeneratorInject: true
+pluralizeListTitles: false
+pygmentsCodeFences: false
+pygmentsUseClasses: false
+minify: false
+paginate: 9999
+disableKinds:
+  - section
+  - categories
+  - tags
+
+permalinks:
+  writing: /:year/:month/:day/:slug/
+
+params:
+  description: "My minimal blog, I am hacker too!"
+
+frontmatter:
+  author: Curiorat
+  sitename: Curiorat
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: atom
+  JSON:
+    mediatype: application/json
+    baseName: feed
+
+
